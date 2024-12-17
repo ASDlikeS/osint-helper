@@ -1,0 +1,131 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*------------------------------------------------------*/
+
+body {
+    background-color: black;
+    scroll-behavior:inherit;
+}
+
+.captchaform{
+    background-color: #ffffff;
+    width: 1000px;
+    height: 500px;
+    margin-top: 150px;
+    border-radius: 10px;
+    box-shadow:0 0 1000px #ffffff;
+    margin: auto;
+}
+
+h1.title {
+    margin: 10% 10% 0 14%;
+    padding-top: 10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px #880000;
+    text-shadow: 2px 0 10px red;
+}
+
+.avt_logo {
+    width: 150px;
+    position: relative;
+    left: 880px;
+    bottom: 180px;
+}
+
+
+/*Form styles*/
+
+form {
+    background-color: black;
+    width: 500px;
+    height: 250px;
+    
+    position: relative;
+    left: 250px;
+    bottom: 130px;
+    border-radius: 50px;
+}
+
+form h1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-left: 175px;
+    margin-right: 175px;
+    margin-top: 30px;
+    background-color: rgb(31, 30, 30);
+    border: 1px dashed white;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    box-shadow: 5px -5px 1px #ffffff;
+}
+
+form input{
+    display: block;
+    width: 150px;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    box-shadow: 0 0 15px white, inset 0 0 10px black;
+    margin-left: 175px;
+    margin-top: 50px;
+}
+
+form button {
+    display: block;
+    width: 100px;
+    height: 30px;
+    border: 5px solid  #6e0000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    margin-left: 200px;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -3px 3px 2px #a10000;
+
+    transition: 0.3s;
+}
+
+form button:hover {
+    box-shadow: 6px -6px 5px #747474;
+    border: 5px solid rgb(255, 255, 255);
+    color: #ffffff;
+    background-color: black;
+    letter-spacing: 6px;
+    transition: 0.3s;
+}

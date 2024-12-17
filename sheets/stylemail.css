@@ -1,0 +1,401 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*------------------------------------------------------*/
+
+body {
+    background-color: black;
+}
+
+body div.osint_page {
+    background-color: #1d9453;
+    width: 1498px;
+    height: 5595px;
+    margin: auto;
+}
+/*--------------Bodyk-------------------*/
+
+
+
+
+
+/*HEADER*/
+
+header {
+    display: flex;
+    background-color: #024416;
+    align-items:flex-start;
+    height: 154px;
+    flex-wrap: wrap;
+    box-shadow: 0px 100px 1000px #09c723;
+}
+
+.header__title {
+    font-family: "Jaro", serif;
+    font-size: 64px;
+    text-shadow: 5px 1px 1px #ffffff;
+    -webkit-text-stroke: 2px #9e9d9d;
+}
+
+div.osint_page ul {
+    display: flex;
+    font-family: "Alike", serif;
+    font-size: 25px;
+    background-color: #5C5C5C; 
+    flex-basis: 1498px;
+    height: 34px;
+    border-bottom: 3px solid black;
+    text-decoration: underline;
+}
+
+.header__avtors_links h2 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 25px;
+    text-shadow: 2px 1px 3px white;
+}
+
+.header__avtors_links h1 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 40px;
+    color: #b003c7;
+    -webkit-text-stroke:2.5px black;
+    text-shadow:8px 5px 1px rgb(0, 0, 0);
+}
+
+header img.avtors_logo {
+    border: 8px dashed #72008f;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgb(0, 255, 0);
+}
+
+/*---navig. text-color + hover---*/
+.nav_first {
+    color: black;
+    text-shadow: 3px 1px 5px white;
+}
+.nav_first:hover {
+    font-family: "Abril Fatface", serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 8px -3px 3px rgb(0, 0, 0); 
+    -webkit-text-stroke: 0.2px rgb(0, 0, 0);
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.nav_second {
+    color: black;
+    text-shadow: 3px 1px 5px white;
+}
+.nav_second:hover {
+    font-family: "Abril Fatface", serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 8px -3px 3px rgb(0, 0, 0); 
+    -webkit-text-stroke: 0.2px rgb(0, 0, 0);
+    transition: 0.6s;
+    font-weight: bold;
+}
+
+.nav_third {
+    color: black;
+    text-shadow: 3px 1px 5px white;
+}
+.nav_third:hover {
+    font-family: "Abril Fatface", serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 8px -3px 3px rgb(0, 0, 0); 
+    -webkit-text-stroke: 0.2px rgb(0, 0, 0);
+    transition: 0.7s;
+    font-weight: bold;
+}
+
+.nav_fourth {
+    color: black;
+    text-shadow: 3px 1px 5px white;
+}
+.nav_fourth:hover {
+    font-family: "Abril Fatface", serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 8px -3px 3px rgb(0, 0, 0); 
+    -webkit-text-stroke: 0.2px rgb(0, 0, 0);
+    transition: 0.8s;
+    font-weight: bold;
+}
+
+.nav_fifth {
+    color: black;
+    text-shadow: 3px 1px 5px white;
+}
+.nav_fifth:hover {
+    font-family: "Abril Fatface", serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 8px -3px 3px rgb(0, 0, 0); 
+    -webkit-text-stroke: 0.2px rgb(0, 0, 0);
+    transition: 1s;
+    font-weight: bold;
+}
+
+/*POSITION HEADER*/
+.header__top_logo {
+    position: relative;
+    bottom: 35px;
+}
+
+.header__title {
+    position: relative;
+    top: 40px;
+    left: 33px;
+}
+
+.osint_page ul {
+    order: -1;
+    padding:0 416px 0 214px;
+    justify-content: space-around;
+}
+
+/*postions for avtor links*/
+.header__avtors_links {
+    position: relative;
+    left: 650px;
+    bottom: 32px;
+}
+
+.header__avtors_links h1{
+    position: relative;
+    top: 10px;
+}
+
+.avtors_logo {
+    position: relative;
+    left: 110px;
+    bottom: 30px;
+}
+
+.link_git {
+    position: relative;
+    left: 220px;
+    bottom: 80px;
+}
+.link_discord {
+    position: relative;
+    left: 205px;
+    bottom: 87px;
+}
+
+
+
+/*---SECTION--------------*/
+
+.section__top_p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    text-shadow: 0px 0px 3px #ff00aa;
+    margin: 110px 86px 23px 86px;
+    background-color: #06c03e;
+    padding: 30px;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+
+.link_to_home {
+    -webkit-text-stroke: 1px #000000;
+    color: rgb(136, 91, 7);
+    text-transform: uppercase;
+}
+
+.about_soint__paragraphs {
+    width: 845px;
+    height: 124px;
+}
+
+.first_inparagraph {
+    font-family: "Afacad", sans-serif;
+    font-size: 36px;
+}
+.second_inparagraph {
+    font-family: "Aclonica", sans-serif;
+    font-size: 36px;
+    color: #292323;
+}
+.third_inparagraph {
+    font-family: "Afacad", sans-serif;
+    font-size: 29px;
+}
+
+.section__about_tools {
+    font-family: "Aboreto", system-ui;
+    font-size: 24px;
+    width: 1393px;
+    margin-left: 40px;
+}
+
+/*SECTION POSITON*/
+.section__logo_eclipse {
+    position: relative;
+    left: 550px;
+    top: 120px;
+}
+
+.about_soint__paragraphs {
+    position: relative;
+    left: 320px;
+    bottom: 300px;
+}
+
+/*---hover and transitions elemets---*/
+.section__top_p {
+    transition: all 1s linear 0s, color 1s linear 0s, color 3s linear 0s, text-shadow 1s linear 0s, font-size 1s linear 0s;
+}
+
+.section__top_p:hover {
+    border-radius: 200px;
+    background-color: #000000;
+    box-shadow:0 0 1000px #000000;
+    color: aliceblue;
+    text-shadow: 3px 3px 1px rgb(22, 22, 22);
+    padding: 50px 150px 50px 150px;
+    line-height: 50px;
+    font-size: 40px;
+
+    transition: all 1s linear 0,  ;
+    
+}
+
+.second_inparagraph:hover {
+    -webkit-text-stroke: 3px #ff00bf;
+    text-shadow: 4px 4px 1px rgb(0, 0, 0);
+    color: white;
+
+    transition: 1s;
+}
+
+.link_to_home:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 1px #ffffff;
+    
+}
+
+.about_soint__paragraphs:hover {
+    text-shadow:0 0 5px wheat;
+    
+
+}
+
+
+
+
+/*---SECTION WITH TOOLS--------------*/
+
+/*header*/
+section.bot_section {
+    background-color: #2D2323;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 75px 0 75px ;
+    border-radius: 100px 100px 0 0;
+    font-family: "Abel", sans-serif;
+    font-size: 25px;
+    color: white;
+    min-height: 3910px;
+}
+
+.bot_section__title {
+    font-family: "Jolly Lodger", system-ui;
+    font-size: 96px;
+    text-shadow: 3px 3px 10px #6e008a;
+    -webkit-text-stroke: 2px #8d008d;
+    color: #000000;
+
+    align-self: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+/*Main*/
+
+.bot_section div h1 {
+    font-family: "Akaya Kanadaka", system-ui;
+    font-size: 64px;
+    text-decoration: underline;
+    text-shadow: 4px 4px 1px #000000;
+    position: relative;
+    top: 70px;
+    left: 30px;
+}
+
+.bot_section div p {
+    background-color: #353535;
+    border-radius: 100px;
+    padding: 30px 50px 30px 50px;
+}
+
+.bot_section div {
+    height: 400px;
+}
+
+.bot_section div div{
+    border: 8px solid #004d20;
+    box-shadow:0 0 100px #00ff26;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 50px;
+}
+
+.bot_section div div p {
+    justify-self: center;
+    align-self: center;
+    margin: 100px;
+}
+
+.bot_section div div img{
+    border: 10px solid #9003a9;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+/*---transition---*/
+
+.bot_section div div img:hover{
+    border:15px solid #b20486;
+    box-shadow: 0 0 100px #ff00fb;
+    transition: 0.5s;
+}
+
+

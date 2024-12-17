@@ -1,0 +1,183 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*------------------------------------------------------*/
+
+body {
+    background-color: rgb(80, 80, 80);
+}
+
+.main {
+    background-color: #8D3A3A;
+    width: 1498px;
+    height: 1400px;
+    margin: auto;
+}
+/*--------------Bodyk-------------------*/
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 90px;
+    color: red;
+    -webkit-text-stroke:1px #ffffff;
+    margin-bottom: 20px;
+}
+
+.title_better{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: #363636;
+    -webkit-text-stroke:0.3px #ffffff;
+    margin-bottom: 10px;
+}
+
+.text_about {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin: 50px 380px 0 380px;
+    background-color: #242424;
+    border:3px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+.main__block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.imgs {
+    display: flex;
+    border: 10px black solid;
+    padding: 30px 30px 30px 30px;
+    justify-content: space-between;
+    background-color: rgb(77, 77, 77);
+}
+
+.imgs__1 {
+    margin-right: 30px;
+    border:10px solid beige;
+    box-shadow:0 0 100px rgb(0, 0, 0);
+}
+
+.imgs__2 {
+    border:10px solid beige;
+    box-shadow:0 0 100px rgb(0, 0, 0);
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    -webkit-text-stroke:1px rgb(88, 88, 88);
+    text-shadow: 0 0 3px white;
+}
+
+.donated {
+    transform: rotate(90deg);
+    position: relative;
+    left: 500px;
+    
+}
+.donated_2 {
+    transform: rotate(-90deg);
+    position: relative;
+    right: 500px;
+    bottom: 800px;
+}
+
+.get_up {
+    color: black;
+    position: relative;
+    left: 520px;
+    top: 260px;
+}
+
+.get_up:hover{
+    color: rgb(95, 95, 95);
+}
+
+.imgs__1:hover {
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(211, 200, 47);
+    box-shadow:0 0 100px yellow;
+
+    transition: 1s;
+}
+
+.imgs__2:hover {
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(207, 27, 42);
+    box-shadow:0 0 200px rgb(255, 0, 0);
+    transition: 1s;
+}
+
+img{
+    transition: 1s;
+}
+
+#coinContainer {
+    position: relative;
+    left: 950px;
+    bottom: 1400px;
+}
+.coin {
+    position: absolute;
+    width: 300px; /* Размер монетки */
+    height: 300px;
+    animation: flyUp 1s forwards; /* Применяем анимацию */
+}
+
+@keyframes flyUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200px) scale(0.5); /* Монета улетает вверх */
+        opacity: 0; /* Монета исчезает */
+    }
+}
+
