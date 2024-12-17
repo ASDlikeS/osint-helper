@@ -28,8 +28,8 @@ window.onload = function() {
 };
 
 
-const audioPoop = new Audio('/audio/pukane-dolgoe.mp3');
-const audioSucces = new Audio('/audio/upali-dengi-na-igrovoy-schet.mp3');
+const audioPoop = new Audio('/osint-helper/audio/pukane-dolgoe.mp3');
+const audioSucces = new Audio('/osint-helper/audio/upali-dengi-na-igrovoy-schet.mp3');
 
 const bttnDont = document.getElementById('im1');
 const bttnPoop = document.getElementById('im2');
@@ -46,7 +46,7 @@ const coinContainer = document.getElementById("coinContainer")
 bttnDont.addEventListener('click', function() {
     // Создаем новый элемент <img> для монеты
     const coin = document.createElement('img');
-    coin.src = '/img_for_transition/free-png.ru-57-2629897462 1.png'; // Укажите путь к изображению монеты
+    coin.src = '/osint-helper/img_for_transition/free-png.ru-57-2629897462 1.png'; // Укажите путь к изображению монеты
     coin.alt = 'Coin';
     coin.classList.add('coin'); // Добавляем класс для анимации
 
@@ -62,6 +62,6 @@ bttnDont.addEventListener('click', function() {
 bttnDont.addEventListener('click', function() {
     setTimeout(()=>{
         //window.open(`http://127.0.0.1:5500/pages/monero.html`, `_blank`);
-        window.location.href = "/pages/main.html";
+        window.location.href = "/osint-helper/pages/main.html";
     }, 5000)
 })
