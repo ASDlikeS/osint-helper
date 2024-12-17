@@ -370,8 +370,8 @@ section.bot_section {
 }
 
 .bot_section div div{
-    border: 8px solid #004d20;
-    box-shadow:0 0 100px #00ff26;
+    border: 8px solid #5a005b;
+    box-shadow:0 0 100px #ff00f2;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -385,7 +385,7 @@ section.bot_section {
 }
 
 .bot_section div div img{
-    border: 10px solid #9003a9;
+    border: 10px solid #00db71;
     border-radius: 100px;
     transition: 0.5s;
 }
