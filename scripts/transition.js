@@ -62,6 +62,6 @@ bttnDont.addEventListener('click', function() {
 bttnDont.addEventListener('click', function() {
     setTimeout(()=>{
         //window.open(`http://127.0.0.1:5500/pages/monero.html`, `_blank`);
-        window.location.href = "/pages/index.html";
+        window.location.href = "/pages/main.html";
     }, 5000)
 })
