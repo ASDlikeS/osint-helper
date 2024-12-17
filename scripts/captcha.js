@@ -9,7 +9,7 @@ document.getElementById("randomValue").textContent = rndChar;
 document.getElementById("btnSub").onclick = function(){
     txtSub = document.getElementById("textBox").value;
     if(txtSub==rndChar){
-        window.location.replace("http://127.0.0.1:5500/pages/transition.html");;
+        window.location.replace("/osint-helper/pages/transition.html");;
     }
     else{
         window.alert("It DOESN'T WORKS");
