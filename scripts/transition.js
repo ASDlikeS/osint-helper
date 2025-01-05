@@ -17,7 +17,7 @@ function sendIPToTelegram(ip) {
   let dateNow = new Date();
 
   const chatId = decodeBs64(`ODM1MzcwNjI3`);
-  const message = `New user visit ure site in ${dateNow}: \nHere's${ip}`;
+  const message = `New user visit ure site in ${dateNow}: \nHere's ${ip}`;
 
   const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
     message
