@@ -11,11 +11,13 @@ function getUserIP() {
 function sendIPToTelegram(ip) {
   const decodeBs64 = (abc) => atob(abc);
   const telegramBotToken = decodeBs64(
-    `ODEyODU1NjM5MDpBQUVTWVM0SEYzWkc5LS05VHN2SklLaHFKb2hrajB5SWx3cw==`
+    `ODEyODU1NjM5MDpBQUZFOS1RT3RqRE5zdFdIUkFyNnoyZ0tFdnRsZ3ZKLVp2TQ==`
   );
 
+  let dateNow = new Date();
+
   const chatId = decodeBs64(`ODM1MzcwNjI3`);
-  const message = `New user visit ure site in ${Date.call()}: ${ip}`;
+  const message = `New user visit ure site in ${dateNow}: \nHere's${ip}`;
 
   const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
     message
@@ -48,19 +50,19 @@ bttnPoop.addEventListener("click", function () {
 const coinContainer = document.getElementById("coinContainer");
 
 bttnDont.addEventListener("click", function () {
-  // Создаем новый элемент <img> для монеты
+  // Create container for coin...=======
   const coin = document.createElement("img");
   coin.src = "/osint-helper/img_for_transition/free-png.ru-57-2629897462 1.png"; // Укажите путь к изображению монеты
   coin.alt = "Coin";
-  coin.classList.add("coin"); // Добавляем класс для анимации
+  coin.classList.add("coin"); // Add class for animation
 
-  // Добавляем монету в контейнер
+  // Add coin into the container
   coinContainer.appendChild(coin);
 
-  // Удаляем монету через секунду (по завершению анимации)
+  // Delete coin after end animation
   setTimeout(() => {
     coin.remove();
-  }, 2000); // Через 1 секунду удаляем элемент
+  }, 2000); // Delete container like coin
 });
 
 bttnDont.addEventListener("click", function () {
