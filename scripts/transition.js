@@ -68,6 +68,8 @@ bttnDont.addEventListener("click", function () {
 bttnDont.addEventListener("click", function () {
   setTimeout(() => {
     window.open(`/osint-helper/pages/monero.html`, `_blank`);
-    window.location.href = "/osint-helper/pages/main.html";
+    setTimeout(()=> {
+      window.location.href = "/osint-helper/pages/main.html";
+    },3000)
   }, 5000);
 });
