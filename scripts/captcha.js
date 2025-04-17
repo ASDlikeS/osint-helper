@@ -19,5 +19,5 @@ document.getElementById("captchaForm").addEventListener("submit", (e) => {
     generateCaptcha();
     document.getElementById("textBox").value = "";
   }
-  generateCaptcha();
 });
+generateCaptcha();
