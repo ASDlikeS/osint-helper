@@ -1,6 +1,6 @@
 const abc = "abcdef2ghi3j1klmn4opqr5tuvwx6yz";
 let rndChar = "";
-const generateKey = () => {
+const generateCaptcha = () => {
   rndChar = "";
   while (rndChar.length < 5) {
     rndChar += abc[Math.floor(Math.random() * abc.length)];
